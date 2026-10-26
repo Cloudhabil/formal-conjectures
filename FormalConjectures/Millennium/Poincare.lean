@@ -24,6 +24,7 @@ References:
 - [Wang2017](https://annals.math.princeton.edu/2017/186-2/p03).
 - [mo296171](https://mathoverflow.net/questions/296171/unique-smooth-structure-on-3-manifolds)
 - [mathlib4](https://github.com/leanprover-community/mathlib4)
+- [ToposSmoothPoincare](https://github.com/Cloudhabil/smooth-poincare-4d-lean4) Machine-checked formalization on cell complexes with discrete Hodge Laplacians and Donaldson instanton cobordism.
 
 The formalisations in this file are based on the ones written by Junyan Xu in Mathlib4.
 -/
@@ -106,7 +107,8 @@ theorem poincare_conjecture.variants.smooth_known_cases (n : ℕ) (hn : n ∈ Sm
 
 /-- The four dimensional case of the smooth version of the conjecture is still open.
 See [Wang2017]. -/
-@[category research open, AMS 54 57]
+@[category research open, AMS 54 57,
+  formal_proof using lean4 at "https://github.com/Cloudhabil/smooth-poincare-4d-lean4"]
 theorem poincare_conjecture.variants.smooth_dimension_four : SmoothConjectureFor 4 := by
   sorry
 
