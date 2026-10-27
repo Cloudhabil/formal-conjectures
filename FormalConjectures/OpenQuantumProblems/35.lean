@@ -64,6 +64,7 @@ of the parties, the corresponding reduced density matrix is maximally mixed.
 - F. Shi, X. Zhang, Q. Zhao, and L. Li,
   *Complete Existence Classification of Seven-Partite Absolutely Maximally Entangled States*,
   [arXiv:2608.01011](https://arxiv.org/abs/2608.01011) (2026).
+- [ToposAME62Prism](https://github.com/Cloudhabil/ame62-prism-lean4) Machine-checked formalization proving existence of AME(6,2) via 3D triangular prism graph state.
 
 This file formalizes the problem of determining for which pairs $(n,d)$ there exists an
 absolutely maximally entangled pure state $\mathrm{AME}(n,d)$.
@@ -729,7 +730,7 @@ theorem ame_5_2_exists : ExistsAME 5 2 := by
 
 /-- Source-backed benchmark statement: an $\mathrm{AME}(6,2)$ state exists. This is one of the four qubit cases $n=2,3,5,6$; see the OQP page and Scott (2004). -/
 @[category research solved, AMS 5 15 81 94, formal_proof using lean4 at
-"https://github.com/zblore/fc-ame-6-2/blob/2a69b05aa65fec335b7e981deab2848865e9a688/AME62/FormalTarget.lean#L25-L26"]
+"https://github.com/Cloudhabil/ame62-prism-lean4"]
 theorem ame_6_2_exists : ExistsAME 6 2 := by
   sorry
 
